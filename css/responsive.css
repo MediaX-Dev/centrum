@@ -1,0 +1,252 @@
+/* Extra large devices (1200px and down) */
+
+@media screen and (max-width: 1200px) {
+    .au-bottom-img {
+        top: -155px;
+    }
+
+    .enviromental-box .row {
+        padding: 30px !important;
+    }
+
+    .enviromental-box .row .col-md-4:nth-child(2) .eb-box {
+        border-left: 0px solid var(--th-c-1);
+        border-right: 0px solid var(--th-c-1);
+    }
+
+
+}
+
+
+/* Large devices (992px and down) */
+
+@media screen and (max-width: 992px) {
+    :root {
+        --th-fs-1: calc(40px*0.9);
+        --th-fs-4: calc(32px*0.9);
+        --th-fs-2: calc(24px*0.9);
+        --th-fs-3: calc(18px);
+    }
+
+    .eb-box {
+        padding: 10px;
+    }
+
+    .au-bottom-img {
+        top: 0px;
+    }
+
+    .we-do {
+        padding: 80px 0px;
+        transform: translateY(0px);
+    }
+    .nav-logo a img{
+        width: 100%;
+        right: 0px;
+      }
+      .wd-text p {
+        margin: 30px 0px;
+    }
+}
+
+
+/* Medium devices (768px and down) */
+
+@media screen and (max-width: 768px) {
+    :root {
+        --th-fs-1: calc(40px*0.7);
+        --th-fs-4: calc(32px*0.75);
+        --th-fs-2: calc(24px*0.8);
+        --th-fs-3: calc(18px*0.9);
+    }
+   
+    .hh-box {
+        height: 700px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .th-btn {
+        padding: 8px 24px;
+    }
+
+    .enviromental {
+        padding: 50px 0px;
+    }
+
+    .wd-text p {
+        margin: 20px 0px;
+    }
+
+    h1 {
+        letter-spacing: 4px;
+    }
+
+    .enviromental-box {
+        transform: translate(0, 0%);
+    }
+
+    .ct-box {
+        padding: 40px 0px;
+    }
+
+    .contribut-to {
+        padding: 50px 0px;
+    }
+
+    .foot-sec-1 h2 {
+        margin-bottom: 20px;
+    }
+
+    .foot-sec {
+        max-width: 100%;
+    }
+
+    .footer,
+    .scrap-from,
+    .places,
+    .unique-selling {
+        padding: 50px 0;
+    }
+
+    .wwu-box {
+        max-width: 90%;
+    }
+
+    .wwu-right {
+        height: 300px;
+    }
+
+    .p-point {
+        display: flex;
+        gap: 52px;
+        margin-top: 70px;
+    }
+
+    .e-box:hover {
+        background-color: #faedce;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .ctb-h h1 {
+        font-size: calc(var(--th-fs-1));
+    }
+
+    .op-box {
+        padding: 12px;
+    }
+
+}
+
+
+/* Small devices (576px and down) */
+
+@media screen and (max-width: 576px) {
+    .hh-box {
+        height: 600px;
+    }
+
+    .hhb {
+        top: 55%;
+    }
+
+    .social-icon {
+        margin-top: 0px;
+    }
+
+    .wwu-box {
+        max-width: 100%;
+    }
+
+    .p-point {
+        display: flex;
+        gap: 52px;
+        margin-top: 40px;
+    }
+
+    .sct-btn {
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .sct-btn h3 {
+        margin: 0;
+    }
+
+    .sct-right img {
+        width: 100%;
+        min-width: 100%;
+        margin-top: 20px;
+    }
+
+    .carousel-indicators {
+        left: 50%;
+        top: 77%;
+        max-width: 100%;
+        max-height: auto;
+        transform: rotate(0deg) translate(-50%, 50%);
+    }
+
+    /* .carousel-indicators [data-bs-target] {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 3px;
+        margin-left: 3px;
+        cursor: pointer;
+    } */
+    .about-hero h1 {
+        font-size: calc(var(--th-fs-1)*1.5);
+    }
+    .hib-left h1{
+        font-size: calc(var(--th-fs-1)*4);
+    }
+    .carousel-indicators {
+        margin-top: 25px;
+    }
+
+    .container-xxl {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .header {
+        padding: 15px 0px;
+    }
+    /* .about-hero .ah-img.active {
+        top: 570px;
+    } */
+
+    .enviromental-box .row {
+        padding: 20px !important;
+    }
+
+    .wd-img img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .wd-text {
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        padding: 20px;
+    }
+
+    .wd-text p {
+        margin: 10px 0px;
+    }
+
+    .wd-text::before {
+        transform: scale(1);
+    }
+
+    .wwu-right {
+        height: auto;
+    }
+    .m-text{
+        padding: 0px;
+        margin-top: 20px;
+    }
+}

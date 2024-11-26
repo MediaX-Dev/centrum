@@ -1,0 +1,62 @@
+<div class="container-xxl p-0">
+    <div class="header">
+        <menu class="d-none d-lg-block p-0">
+            <ul class="menu-list">
+                <li class="list-item"><a href="index.html">Home</a></li>
+                <li class="list-item"><a href="about-us.html">About Us</a></li>
+                <li class="list-item"><a href="product.html">Product</a></li>
+            </ul>
+        </menu>
+        <div class="nav-logo"><a href="index.html"><img src="image/logo-light.png" class="w-100" alt=""></a></div>
+        <div class="nav-contact d-none d-lg-block"><a href="contact-us.html" class="th-btn th-btn-1">CONTACT</a></div>
+        <div class="nav-menu-btn d-block d-lg-none" id="menu-open"><i class="fal fa-bars"></i></div>
+    </div>
+    <div class="" id="mobile-menu">
+        <div class="d-flex justify-content-between w-100 align-items-center">
+            <div class="nav-logo"><a href="index.html">CENTRUM IMPEX</a></div>
+            <div class="nav-menu-btn" id="menu-close"><i class="fal fa-times"></i></div>
+        </div>
+        <menu class="">
+            <ul class="menu-list">
+                <li class="list-item"><a href="index.html">Home</a></li>
+                <li class="list-item"><a href="about-us.html">About Us</a></li>
+                <li class="list-item"><a href="product.html">Product</a></li>
+                <li class="list-item"><a href="contact-us.html" class="th-btn th-btn-1">CONTACT</a></li>
+            </ul>
+        </menu>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: "en,pl,de,es,it,fr,ja,ko,zh-CN",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        },
+            'google_translate_element');
+    }
+</script>
+
+<script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+
+    $("#menu-open").click(function () {
+        $("#mobile-menu").addClass("active");
+    })
+    $("#menu-close").click(function () {
+        $("#mobile-menu").removeClass("active");
+    })
+    $(window).scroll(function () {
+        let st = $(window).scrollTop();
+        if (st > 70) {
+            $("#header").addClass('active');
+        } else {
+            $("#header").removeClass('active');
+        }
+    })
+   
+</script>

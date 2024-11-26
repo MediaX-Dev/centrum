@@ -1,0 +1,1387 @@
+/* 01.base Start ------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&display=swap");
+
+:root {
+  --th-c-1: #004f51;
+  --th-c-2: #ffb400;
+  --th-c-3: #ebefe9;
+  --th-c-4: #000;
+  --th-c-5: #fff;
+  --th-fs-1: 40px;
+  --th-fs-4: 32px;
+  --th-fs-2: 24px;
+  --th-fs-3: 18px;
+  --th-font-1: "Kumbh Sans", sans-serif;
+  --th-font-2: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  top: 0px !important;
+  /* overflow-x: hidden !important; */
+}
+section{
+  overflow: hidden !important;
+  /* overflow-y: visible !important; */
+}
+/* * {
+  user-select: none;
+} */
+.eb-text,
+.we-do p,
+.ctb p,
+.wwu-right h3,
+.wwu-right p,
+.event .ev-heah p,
+.ebt-body p,
+.hib-right p,
+.business p,
+.sf-text p,
+.e-text p,
+.us-card .usc-text p,
+.our-product p,
+.gallery p,
+.about-us p.mb-4
+{
+  text-align: justify !important;
+}
+.container-xxl {
+  max-width: 1600px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--th-c-1);
+  font-family: var(--th-font-1);
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h1 {
+  font-size: var(--th-fs-1);
+  line-height: 150%;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: var(--th-fs-2);
+}
+
+h3 {
+  font-size: var(--th-fs-3);
+}
+
+p {
+  font-family: var(--th-font-1);
+  font-size: var(--th-fs-3);
+  font-weight: 400;
+  line-height: 160%;
+}
+
+a {
+  font-family: var(--th-font-1);
+  font-size: var(--th-fs-3);
+  font-weight: 400;
+  line-height: 122%;
+  text-decoration: none;
+}
+
+.th-btn {
+  padding: 10px 40px;
+  font-size: var(--th-fs-3);
+  color: #fff;
+  font-family: var(--th-font-1);
+  font-size: var(--th-fs-3);
+  border: 2px solid transparent;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 0.9px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.th-btn-1 {
+  border: 2px solid var(--th-c-5);
+  font-weight: 300;
+  background-color: transparent;
+  color: var(--th-c-5);
+}
+
+.th-btn-1:hover {
+  background-color: var(--th-c-1);
+  border: 2px solid var(--th-c-1);
+}
+
+.th-btn-2 {
+  background-color: #ffc333;
+  color: var(--th-c-1);
+}
+
+.th-btn-2:hover {
+  background-color: var(--th-c-2);
+  border: 2px solid #b37e00;
+}
+
+.th-btn-3 {
+  background-color: #337274;
+  color: var(--th-c-2);
+}
+
+.th-btn-3:hover {
+  background-color: var(--th-c-1);
+  border: 2px solid #002f31;
+}
+
+/* 
+Scroll Bar style start
+*/
+
+::-webkit-scrollbar {
+  /* width */
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  /* Track */
+  background-color: var(--th-c-4);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--th-c-3);
+  border-radius: 20px;
+}
+
+.row {
+  padding: 0px !important;
+}
+
+/* Scroll Bar style Section End */
+
+#about-page main,
+#product-page main,
+#contact-page main,
+#product-sub-page main {
+  margin-top: 90px;
+}
+
+/* ------------- base Section End ------------- */
+
+/* 02. Section Start ------------------------------ */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(25px);
+  transition: all .5s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+  margin-right: 20px;
+}
+.header li:nth-child(3){
+  margin: 0px;
+}
+
+.header a {
+  color: var(--th-c-5);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#about-page .header a,
+#product-page .header a,
+#contact-page .header a,
+#product-sub-page .header a {
+  color: var(--th-c-1);
+}
+
+#about-page .header a.th-btn,
+#product-page .header a.th-btn,
+#contact-page .header a.th-btn,
+#product-sub-page .header a.th-btn {
+  border: 1px solid var(--th-c-1);
+}
+
+#product-page .header a.th-btn:hover,
+#about-page .header a.th-btn:hover,
+#contact-page .header a.th-btn:hover,
+#product-sub-page .header a.th-btn:hover {
+  color: var(--th-c-5);
+}
+
+.header menu a {
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  padding: 5px 0px;
+  transition: all .5s;
+}
+
+/* .header menu a:hover {
+  color: var(--th-c-1);
+} */
+
+.header menu a::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: var(--th-c-1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all .5s;
+}
+
+.header menu a:hover:after {
+  width: 100%;
+}
+.nav-logo{
+  max-width: 150px;
+}
+.nav-logo a {
+  font-size: var(--th-fs-2);
+  font-weight: 700;
+  letter-spacing: 5.28px;
+}
+.nav-logo a img{
+  width: 150px;
+  position: relative;
+  right: 50px;
+  transition: all .5s;
+}
+.nav-menu-btn .fal {
+  font-size: var(--th-fs-2);
+  border: 1px solid var(--th-c-5);
+  color: var(--th-c-5);
+  padding: 10px;
+  cursor: pointer;
+  transition: all .5S;
+}
+
+.nav-menu-btn .fal:hover {
+  background-color: var(--th-c-1);
+  border: 1px solid var(--th-c-1);
+}
+
+#about-page .nav-menu-btn .fal,
+#contact-page .nav-menu-btn .fal,
+#product-sub-page .nav-menu-btn .fal {
+  border: 1px solid var(--th-c-1);
+  color: var(--th-c-1);
+}
+
+#about-page .nav-menu-btn .fal:hover,
+#contact-page .nav-menu-btn .fal:hover,
+#product-sub-page .nav-menu-btn .fal:hover {
+  background-color: var(--th-c-1);
+  color: var(--th-c-5);
+}
+
+#header.active {
+  background-color: rgba(0, 80, 81, 0.6);
+}
+
+#header.active .header .nav-logo a {
+  color: var(--th-c-5) !important;
+}
+
+#header.active .header menu a {
+  color: var(--th-c-5) !important;
+}
+
+#header.active .header .th-btn {
+  color: var(--th-c-5);
+  border: solid 2px var(--th-c-5);
+}
+
+#header.active .header .th-btn:hover {
+  border: solid 2px var(--th-c-1);
+}
+
+#header.active .header menu a::after {
+  background-color: var(--th-c-5);
+}
+
+#header.active .header .nav-menu-btn .fal {
+  border: 1px solid var(--th-c-5);
+  color: var(--th-c-5);
+}
+
+#header.active .header .nav-menu-btn .fal:hover {
+  background-color: var(--th-c-1);
+  border: 1px solid var(--th-c-1);
+}
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--th-c-5);
+  width: 100%;
+  display: block;
+  transform: translateY(-100%);
+  padding: 15px;
+  transition: all .5s;
+}
+
+#mobile-menu .nav-menu-btn .fal {
+  border: 1px solid var(--th-c-1);
+  color: var(--th-c-1);
+  padding: 10px;
+  cursor: pointer;
+  transition: all .5S;
+}
+
+#mobile-menu .nav-menu-btn .fal:hover {
+  border: 1px solid var(--th-c-1);
+  color: var(--th-c-1);
+  padding: 10px;
+  cursor: pointer;
+  transition: all .5S;
+}
+
+#mobile-menu .nav-menu-btn .fal:hover {
+  border: 1px solid var(--th-c-1);
+  color: var(--th-c-5);
+  padding: 10px;
+  cursor: pointer;
+  transition: all .5S;
+}
+
+#mobile-menu .nav-logo a {
+  font-size: var(--th-fs-2);
+  color: var(--th-c-1);
+  font-weight: 700;
+  letter-spacing: 5.28px;
+}
+
+#mobile-menu .th-btn.th-btn-1 {
+  border: 2px solid var(--th-c-1);
+}
+
+#mobile-menu .th-btn.th-btn-1:hover {
+  color: var(--th-c-5);
+  font-weight: 500;
+
+}
+
+#mobile-menu.active {
+  transform: translateY(0%);
+}
+
+#mobile-menu menu {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#mobile-menu menu .menu-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  list-style-type: none;
+  padding: 0;
+  gap: 20px;
+}
+
+#mobile-menu menu .menu-list a {
+  font-size: var(--th-fs-2);
+  color: var(--th-c-1);
+  padding-bottom: 10px;
+  position: relative;
+}
+
+#mobile-menu menu a::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: var(--th-c-1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all .5s;
+}
+
+#mobile-menu menu a:hover:after {
+  width: 100%;
+}
+
+.goog-te-gadget-icon {
+  display: none;
+}
+
+
+.goog-te-gadget-simple {
+  color: var(--th-c-1) !important;
+  background-color: var(--th-c-2) !important;
+  border: 0 !important;
+  font-size: 10pt;
+  font-weight: 800;
+  display: inline-block;
+  padding: 10px 10px !important;
+  cursor: pointer;
+  zoom: 1;
+}
+
+
+#google_translate_element {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 99999;
+}
+
+.goog-te-gadget-simple span {
+  color: var(--th-c-1) !important;
+}
+
+.skiptranslate>iframe {
+  display: none;
+}
+
+/* .VIpgJd-ZVi9od-vH1Gmf {
+  background-color: var(--th-c-1) !important;
+  text-decoration: none;
+  border: 1px solid var(--th-c-1);
+  overflow: hidden;
+  padding: 4px;
+} */
+
+/* -------------  Section Section  End ------------- */
+
+/* 03. Hero Banner Section Start ------------------------------ */
+.hero-home {
+  position: relative;
+  /* height: 100%; */
+  z-index: 10;
+}
+
+.hh-box {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hh-box video {
+  width: 100%;
+  min-width: 2000px;
+  margin: auto;
+}
+
+.hhb {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.hhb-text {
+  width: 100%;
+  max-width: 800px;
+}
+
+.hhb-text h1 {
+  color: #fff;
+  line-height: 150%;
+  /* 60px */
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.hhb-text p {
+  color: #fff;
+  width: 100%;
+  max-width: 500px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  max-width: 80px;
+  max-height: 80px;
+  transform: rotate(90deg) translateX(-50%);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 3px;
+  margin-left: 3px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: var(--th-c-2);
+}
+
+/* ------------- Hero Banner Section End ------------- */
+
+/* 04. Enviromental Section Start ------------------------------ */
+.enviromental{
+  overflow: visible !important;
+}
+.enviromental-box {
+  background: rgba(255, 253, 246);
+  box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 20;
+  transform: translate(0, -50%);
+}
+
+.enviromental-box .row {
+  background: linear-gradient(rgba(0, 79, 81, 0.55), rgba(0, 79, 81, 0));
+  padding: 30px 80px !important;
+  margin: 0;
+}
+
+.eb-box {
+  padding: 20px;
+}
+
+.eb-box img {
+  width: 35px;
+}
+
+.enviromental-box .row .col-md-4:nth-child(2) .eb-box {
+  border-left: 1px solid var(--th-c-1);
+  border-right: 1px solid var(--th-c-1);
+}
+
+/* ------------- Enviromental Section End ------------- */
+/* 05. About Us Section Start ------------------------------ */
+.about-us {
+  overflow: hidden;
+}
+
+.au-bottom-img {
+  position: relative;
+  top: -270px;
+}
+
+.au-bottom-img img {
+  width: 100%;
+  /* min-width: 1200px; */
+}
+
+/* ------------- About Us Section End ------------- */
+/* 06. We Do Section Start ------------------------------ */
+.we-do {
+  /* padding: 0px 0px 60px 0px; */
+  transform: translateY(-120px);
+}
+
+/* .we-do h1{
+  color: var(--th-c-1) !important;
+} */
+.we-do-slider{
+  width: 100%;
+}
+.wd-box {
+  position: relative;
+}
+.wd-box .wd-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wd-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .8s;
+  padding: 20px;
+}
+
+.wd-text h3 {
+  font-size: var(--th-fs-2);
+  color: var(--th-c-3);
+  position: relative;
+  z-index: 10;
+  user-select: none;
+}
+
+.wd-text p {
+  margin: 50px 0px;
+  font-size: var(--th-fs-3);
+  color: var(--th-c-3);
+  position: relative;
+  z-index: 10;
+  user-select: none;
+}
+
+.wd-text .th-btn {
+  position: relative;
+  z-index: 10;
+}
+
+.wd-text::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 79, 81, 0.92);
+  transform-origin: left bottom;
+  transform: scale(0, 0);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: all 0.4s;
+}
+
+.wd-box:hover .wd-text::before {
+  transform: scale(1, 1);
+}
+
+.wd-box:hover .wd-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ------------- We Do Section End ------------- */
+
+/* 07. Contribut To A Section Start ------------------------------ */
+.contribut-to {
+  padding: 100px 0px;
+  background: url(../image/contribut-to.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.ct-box {
+  padding: 70px 0px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(31.25px);
+}
+
+.ctb {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: var(--th-c-5);
+}
+
+.ctb h4,
+.ctb p {
+  color: var(--th-c-5);
+}
+
+.ctb-h h4 {
+  text-transform: uppercase;
+  color: var(--th-c-5);
+}
+
+.ctb-h h1 {
+  text-transform: uppercase;
+  color: var(--th-c-1);
+  font-size: calc(var(--th-fs-1) * 2);
+}
+
+/* ------------- Contribut To A Section End ------------- */
+/* 08. Work with us Section Start ------------------------------ */
+.work-with-us {
+  padding: 80px 0px;
+}
+
+.wwu-box {
+  max-width: 95%;
+  display: flex;
+  gap: 20px;
+  margin: 20px 0px;
+}
+
+.wwu-y-box {
+  width: 10px;
+  height: 100%;
+  background-color: var(--th-c-2);
+}
+
+.wwu-right {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wwu-right h3 {
+  text-transform: uppercase;
+  line-height: 160%;
+  /* 28.8px */
+  letter-spacing: 1.26px;
+}
+
+.wwu-right p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/* ------------- Work with us Section End ------------- */
+/* 09. Events and Updates Section Start ------------------------------ */
+.event {
+  background-color: var(--th-c-1);
+  padding: 80px 0;
+}
+
+.event .ev-heah h1 {
+  color: var(--th-c-5);
+  text-transform: uppercase;
+  line-height: 150%;
+}
+
+.event .ev-heah h1 .and {
+  color: var(--th-c-2);
+}
+
+.event .ev-heah p {
+  color: var(--th-c-3);
+}
+
+.eb-tab {
+  background: #006466;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.eb-tab.active .ebt-h p {
+  color: var(--th-c-2);
+}
+
+.ebt-h {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.ebt-h p {
+  color: var(--th-c-5);
+  margin: 0;
+  transition: all 0.5s;
+}
+
+.ebt-h .ebt-h-icon .fal {
+  color: var(--th-c-2);
+  font-size: var(--th-fs-3);
+}
+
+.ebt-body {
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.ebt-body .more-btn{
+ color: var(--th-c-2);
+ cursor: pointer;
+}
+.ebt-body .yellow{
+ color: var(--th-c-2);
+}
+
+.ebt-body p {
+  color: var(--th-c-5);
+}
+
+.ebt-body a {
+  color: var(--th-c-2);
+  text-decoration: underline;
+}
+
+.eb-right {
+  position: relative;
+}
+
+.ebs-bo {
+  padding: 15px 10px;
+  background: rgba(0, 79, 81, 0.41);
+  backdrop-filter: blur(11px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.ebs-bo p {
+  color: var(--th-c-5);
+}
+
+.ebs-bo .far {
+  color: var(--th-c-2);
+  font-size: var(--th-fs-3);
+  cursor: pointer;
+}
+
+/* ------------- Events and Updates Section End ------------- */
+
+/* 10. Footer Section Start ------------------------------ */
+.whatsapp{
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  border-radius:50%;
+  background-color: var(--th-c-3);
+}
+.footer {
+  background-color: #ebefe9;
+  padding: 80px 0;
+}
+.footer h5{
+  font-weight: 500;
+}
+
+.foot-sec {
+  max-width: 100%;
+  height: 100%;
+}
+.foot-brand{
+max-width: 200px; 
+}
+.foot-brand img{
+width: 100%;  
+}
+.foot-sec-1 h2 {
+  letter-spacing: 5.28px;
+  margin-bottom: 50px;
+}
+
+.foot-sec-2 h2,
+.contact-form h2 {
+  color: var(--th-c-4);
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .fal {
+  font-size: var(--th-fs-3);
+  color: var(--th-c-1);
+  transform: translateY(2px);
+}
+
+.footer a {
+  font-size: var(--th-fs-3);
+  color: var(--th-c-4);
+  font-family: var(--th-font-1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: calc(100%);
+  background-color: #fff8e8;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+}
+
+/* .contact-form button {
+  border: none;
+} */
+
+.social-icon {
+  margin-top: 160px;
+}
+
+.social-icon .fab {
+  color: var(--th-c-1);
+  font-size: var(--th-fs-3);
+}
+
+/* ------------- Footer Section End ------------- */
+
+/* About Us Page =============================================---------------- */
+/* 11. About Hero Section Start ------------------------------ */
+.about-hero {
+  padding: 300px 0px 500px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero .ah-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all .5s;
+}
+
+.about-hero .ah-img.active {
+  top: 650px;
+}
+
+.about-hero .ah-img img {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.about-hero h1 {
+  font-size: calc(var(--th-fs-1)*2);
+  color: var(--th-c-2);
+}
+
+/* ------------- About Hero Section End ------------- */
+
+
+/* 11. Managament Section Start ------------------------------ */
+
+.management {
+  padding: 80px 0px;
+}
+
+.m-box {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+}
+.m-img{
+  flex: 1 1 200px;
+}
+.m-text {
+  /* 
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  background: rgba(255, 253, 246, 0.58);
+  backdrop-filter: blur(15px);
+  transform: translateY(100%);
+  */
+  flex-grow: 2;
+  padding: 20px 20px 0px 20px;
+  transition: all 0.5s;
+}
+
+.m-box:hover .m-text {
+  transform: translateY(0%);
+}
+
+.m-text h2 {
+  color: var(--th-c-1);
+  font-size: var(--th-fs-4);
+  font-weight: 800;
+  line-height: 130%;
+  text-transform: none;
+  margin-bottom: 0;
+  /* 57.6px */
+}
+
+.m-text span {
+  color: var(--th-c-1);
+  font-size: var(--th-fs-3);
+  font-family: var(--th-font-2);
+  /* font-style: italic; */
+  font-weight: 400;
+  line-height: 120%;
+  /* 27px */
+}
+
+.m-text p {
+  color: var(--th-c-1);
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+
+/* ------------- Managament Section End ------------- */
+/* 1. History Section Start ------------------------------ */
+.history {
+  padding: 80px 0px;
+  margin-bottom: 80px;
+  background-color: var(--th-c-1);
+}
+
+.history h1 {
+  color: var(--th-c-3);
+}
+.hi-box{
+  padding: 30px 0px !important;
+}
+.his-tab{
+  cursor: pointer;
+}
+.hib-left h1 {
+  color: #417576;
+  font-size: calc(var(--th-fs-1)*5);
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.hib-right p {
+  color: var(--th-c-5);
+}
+.his-line{
+  width: 100%;
+  height: 11px;
+  background: #123637;
+  transition: all .5s;
+}
+.his-tab.active .his-line{
+  background-color: var(--th-c-2);
+}
+.his-tab h6{
+  color: var(--th-c-5);
+  font-family: var(--th-font-1);
+  font-size: var(--th-fs-3);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ------------- History Section End ------------- */
+
+
+/* 12. Business Section Start ------------------------------ */
+.b-box {
+  background: url(../image/business.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0px;
+}
+
+.b-box .wwu-box {
+  background: rgba(255, 253, 246, 0.58);
+  backdrop-filter: blur(15px);
+  padding: 50px 20px;
+  margin: 20px auto;
+}
+
+/* ------------- Business Section End ------------- */
+
+/* 13. Scrap Form Section Start ------------------------------ */
+.scrap-from {
+  padding: 80px 0px;
+  padding-bottom:0px ;
+}
+
+.sf-img{
+  height: 100%;
+}
+.sf-img img{
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------------- Scrap Form Section End ------------- */
+
+/* 14. Places Section Start ------------------------------ */
+.places {
+  padding: 80px 0px;
+}
+
+.p-point {
+  display: flex;
+  gap: 120px;
+  margin-top: 120px;
+  /* justify-content: space-between; */
+}
+
+.p-point ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.p-point li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--th-fs-3);
+  margin-bottom: 20px;
+}
+
+.p-point .fas {
+  color: var(--th-c-2);
+}
+
+.p-point p {
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ------------- Scrap Form Section End ------------- */
+
+/* 15. How Scrap is Economical Section Start ------------------------------ */
+.e-box {
+  background: #ebefe9;
+  padding: 20px 0px;
+  margin-bottom: 15px;
+  transition: all 0.5s;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.5s !important;
+}
+
+.e-box:hover {
+  background-color: #faedce;
+  width: 90%;
+  border-radius: 50px;
+}
+
+.e-text {
+  display: flex;
+  gap: 15px;
+}
+
+.e-text h2 {
+  color: var(--th-c-1);
+  font-weight: 700;
+  line-height: 160%;
+}
+.e-text p{
+  margin-bottom: 0;
+}
+
+/* ------------- How Scrap is Economical Section End ------------- */
+
+/* 16. Unique Selling Section Start ------------------------------ */
+.unique-selling {
+  padding: 80px 0px;
+}
+
+.us-box {
+  padding: 40px 0px;
+  background: url(../image/Unique-selling.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.us-card {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  text-align: center;
+}
+
+.us-card .usc-icon {
+  max-width: 80px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.us-card .usc-text h2 {
+  color: var(--th-c-5);
+  font-size: var(--th-fs-2);
+  font-weight: 700;
+  line-height: 160%;
+  /* 38.4px */
+}
+
+.us-card .usc-text p {
+  color: var(--th-c-5);
+  font-size: var(--th-fs-3);
+  line-height: 160%;
+  /* 38.4px */
+}
+
+/* ------------- Unique Selling Section End ------------- */
+
+
+/* 17.Selling Channels Section Start ------------------------------ */
+.selling-channels {
+  padding-bottom: 80px;
+}
+
+.sct-btn {
+  padding: 30px 20px;
+  background: #EBEFE9;
+  transition: all .5s;
+}
+
+.sct-btn:hover {
+  background: #FAEDCE;
+  border-radius: 50px;
+}
+
+.sct-right {
+  overflow: hidden;
+}
+
+.sct-right img {
+  width: 100%;
+  min-width: 486px;
+}
+
+/* -------------Selling Channels Section End ------------- */
+
+/* Contact Us Page =============================================---------------- */
+
+/* 18.Love to here Section Start ------------------------------ */
+.love-to-here {
+  background-color: var(--th-c-1);
+  padding-top: 80px;
+}
+
+.love-to-here h1,
+.love-to-here p {
+  color: var(--th-c-5);
+}
+
+.contact-form-map {
+  padding: 80px 0px;
+}
+
+.cfm-right iframe {
+  width: 100%;
+  height: 350px;
+}
+
+/* ------------- Love to here Section End ------------- */
+
+/* Product Page =============================================---------------- */
+#product-page {
+  /* background-color: var(--th-c-1); */
+}
+
+/* 19.Our Product Section Start ------------------------------ */
+.our-product {
+  padding: 100px 0px;
+}
+
+.our-product h1 {
+  /* color: var(--th-c-5); */
+}
+
+.our-product p {
+  /* color: var(--th-c-5); */
+}
+
+.our-product .op-img {
+  color: var(--th-c-5);
+}
+
+.op-box {
+  background: #ebefe9;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+/* .op-box thead tr th{
+background-color: rgba(4, 118, 121, 1) !important;
+color: var(--th-c-3);
+}
+.op-box tbody tr:nth-child(even) td{
+background-color: rgba(4, 118, 121, 1) !important;
+color: var(--th-c-3);
+}
+.op-box tbody tr:nth-child(odd) td{
+background-color: rgba(6, 88, 90, 1) !important;
+color: var(--th-c-3);
+} */
+
+.op-box h2 {
+  text-transform: uppercase;
+  color: var(--th-c-1);
+  letter-spacing: 3px;
+  margin: 0 !important;
+}
+
+.op-box p {
+  /* color: #FFFDF6; */
+  margin: 35px 0px;
+}
+
+.op-box .th-btn {
+  font-weight: 700;
+}
+
+/* ------------- Our Product Section End ------------- */
+
+/* Product Image Page =============================================---------------- */
+
+/* 20.Gallery Section Start ------------------------------ */
+.gallery {
+  padding: 100px 0px;
+}
+
+.gallery h2 {
+  font-weight: 700;
+  letter-spacing: 5.28px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.gallery .br-box a,
+.gallery .br-box p,
+.gallery .br-box .fal {
+  color: var(--th-c-1);
+}
+
+.gallery .br-box a:hover {
+  text-decoration: underline;
+}
+.details-pera{
+  background-color: #FFF8E8;
+  padding: 40px 0px;
+  margin: 30px 0px;
+}
+.gallery-img{
+  margin-top: 80px;
+}
+.gallery-img h2{
+  line-height: 1.5;
+}
+/* ------------- Gallery Section End ------------- */
